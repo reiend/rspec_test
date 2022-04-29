@@ -1,0 +1,36 @@
+
+
+<div class="article-focus">
+  <h2 class="article-focus__article-focus-about">
+    Viewing
+    <span>
+      <%= @article.title %>
+    </span>
+  </h2>
+
+  <hr>
+
+  <div class="article-focus__article-focus-container">
+    <div class=article-focus__article-focus-container-solo>
+      <p>ID</p>
+      <h3 class="article-focus__article-focus-id">
+        <%= @article.id %>
+      </h3>
+    </div>
+
+    <div class=article-focus__article-focus-container-solo>
+      <p>Title</p>
+      <h3 class="article-focus__article-focus-title">
+        <%= @article.title %>
+      </h3>
+    </div>
+
+    <div class=article-focus__article-focus-container-solo>
+      <p>Body</p>
+      <p class="article-focus__article-focus-text">
+        <%= @article.body %>
+      </p>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,22 @@
+
+<div class="article">
+  <h1 class="article__article-title">List of Articles</h1>
+  <hr>
+  <ul class="article__article-list">
+    <% @articles.each do |article| %>
+      <li class="article__article-list-container">
+        <h3 class="article__article-list-title">
+          <%# <a href="<%= focus_article_path(article) %1>"> %>
+          <%#   <%= article.title %1> %>
+          <%# </a> %>
+
+          <%= link_to article.title, focus_article_path(article) %>
+        </h3>
+        <p class="article__article-list-text">
+          <%= article.body %>
+        </p>
+      </li>
+    <% end %>
+  </ul>
+</div>
+

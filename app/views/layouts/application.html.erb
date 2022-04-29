@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BlogTest</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  </head>
+
+  <body>
+    <div class="overlay"></div>
+    <header class="header">
+      <nav class="navbar">
+        <h1 class="navbar__navbar-brand">
+          <%= link_to 'Article', home_article_path, class: 'navbar__navbar-brand-text' %>
+        </h1>
+        <div class="navbar__navbar-list">
+          <%= link_to 'home', home_article_path, class: 'navbar__navbar-list-text' %>
+          <%= link_to 'show', show_article_path, class: 'navbar__navbar-list-text' %>
+        </div>
+      </nav>
+    </header >
+    <%= yield %>
+  </body>
+</html>
